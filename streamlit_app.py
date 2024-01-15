@@ -39,7 +39,7 @@ user_input = {}
 st.title("Telecom Churn Prediction")
 
 # Using st.form to wrap the input collection
-with st.button("user_input_form"):
+st.button("user_input_form"):
     # Collect user inputs on the first page
     for col, input_info in input_columns.items():
         if input_info['type'] == 'number_input':
