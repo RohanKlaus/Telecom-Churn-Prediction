@@ -61,11 +61,11 @@ st.session_state.show_result = True
 
 # Check if the button to show the second page is clicked
 if st.session_state.show_result:
-# Page break
-st.markdown("---")
-
-# Second page layout
-st.title("Result")
+    # Page break
+    st.markdown("---")
+    
+   # Second page layout
+    st.title("Result")
 
 # Display result with animation or other visualizations
 if prediction == 1:
