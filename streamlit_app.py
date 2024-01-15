@@ -59,7 +59,7 @@ prediction = loaded_model.predict(pd.DataFrame([user_input]))[0]
 session_state = SessionState(show_result=True)
 
 # Check if the button to show the second page is clicked
-if st.session_state.show_result:
+if session_state.show_result:
     # Page break
     st.markdown("---")
     
