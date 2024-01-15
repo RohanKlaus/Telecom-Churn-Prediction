@@ -10,7 +10,7 @@ loaded_model = load("Tele_Communicationn.joblib")
 
 # Initialize session state
 if 'show_result' not in st.session_state:
-    st.session_state['show_result'] = ‘False’
+    st.session_state['show_result'] = 'False'
 
 # Define the input fields along with their corresponding input types and conditions
 input_columns = {
