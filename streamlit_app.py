@@ -56,7 +56,7 @@ if st.button("Predict"):
 prediction = loaded_model.predict(pd.DataFrame([user_input]))[0]
 
 # Set the session state variable to True to show the second page
-st.session_state.show_result = True
+session_state = SessionState(show_result=True)
 
 # Check if the button to show the second page is clicked
 if st.session_state.show_result:
