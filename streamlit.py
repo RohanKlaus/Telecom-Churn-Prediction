@@ -6,11 +6,15 @@ from joblib import load
 import sklearn
 print(sklearn.__version__)
 
+class SessionState:
+    def __init__(self, **kwargs):
+        for key, val in kwargs.items():
+            setattr(self, key, val)
+
 loaded_model = load("Tele_Communicationn.joblib")
 
 # Initialize session state
-if 'show_result' not in st.session_state:
-    st.session_state['show_result'] = 'False'
+session_state = SessionState(show_result=False)
 
 # Define the input fields along with their corresponding input types and conditions
 input_columns = {
