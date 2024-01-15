@@ -48,7 +48,7 @@ for col, input_info in input_columns.items():
         user_input[col] = 1 if st.radio(f"{input_info['text']}", options=input_info['options'], key=col) == 'YES' else 0
 
 # Predict button
-if st.form_submit_button("Predict"):
+if st.button("Predict"):
     # Create a DataFrame from user input
     input_df = pd.DataFrame([user_input])
     print(input_df, "input_df")
